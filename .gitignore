@@ -1,0 +1,48 @@
+# Environment variables and credentials (NEVER commit secrets)
+.env
+.env.local
+.env.*.local
+*.env
+*.env.local
+backend/.env.local
+frontend/.env.local
+
+# Node dependencies and build outputs
+node_modules/
+*/node_modules/
+dist/
+*/dist/
+dist-ssr/
+.vite/
+*/.vite/
+
+# Python compiled bytecode and caches
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+backend/autopilot.db
+
+# Generated execution sandbox outputs
+backend/sandbox/Executive_Sales_Report_*.md
+backend/sandbox/cleaned_sample_sales.csv
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

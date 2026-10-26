@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-charcoal-900 text-slate-100 font-sans antialiased selection:bg-electric-500/30 selection:text-electric-400;
+    min-height: 100vh;
+  }
+}
+
+/* Custom scrollbars for high-end developer tool aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* React Flow customizations */
+.react-flow__pane {
+  background-color: #090d16 !important;
+}
+
+.react-flow__background {
+  background-color: #090d16 !important;
+}
+
+.react-flow__controls {
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid #1e293b !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+  background: #0e1422 !important;
+}
+
+.react-flow__controls-button {
+  background: #0e1422 !important;
+  border-bottom: 1px solid #1e293b !important;
+  color: #94a3b8 !important;
+  fill: #94a3b8 !important;
+}
+
+.react-flow__controls-button:hover {
+  background: #1e293b !important;
+  color: #38bdf8 !important;
+  fill: #38bdf8 !important;
+}
+
+.react-flow__edge-path {
+  stroke: #38bdf8 !important;
+  stroke-width: 2 !important;
+}
